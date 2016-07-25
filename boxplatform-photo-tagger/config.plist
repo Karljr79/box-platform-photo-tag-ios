@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>clarifaiSecret</key>
+	<string>YOUR CLARIFAI SECRET KEY</string>
+	<key>clarifaiClientId</key>
+	<string>YOUR CLARIFAI CLIENT ID</string>
+	<key>boxAppUserId</key>
+	<string>A BOX APP USER ID</string>
+	<key>sampleApiUrl</key>
+	<string>URL TO THE SAMPLE SERVER i.e. http://Localhost</string>
+</dict>
+</plist>

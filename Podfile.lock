@@ -1,0 +1,44 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - box-ios-preview-sdk (1.0.1):
+    - box-ios-sdk
+  - box-ios-sdk (1.0.11):
+    - box-ios-sdk/logger (= 1.0.11)
+    - box-ios-sdk/no-arc (= 1.0.11)
+  - box-ios-sdk/logger (1.0.11)
+  - box-ios-sdk/no-arc (1.0.11):
+    - box-ios-sdk/logger
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - box-ios-preview-sdk
+  - box-ios-sdk
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  box-ios-preview-sdk: 1cc287811ae785bccd590aec8673a6a3440015c5
+  box-ios-sdk: a34a7c130e83e3d2380d2f6c1f16e589ba7788ba
+
+PODFILE CHECKSUM: b5255b688c15c09ec8ec06c0bde952bfcf04ab32
+
+COCOAPODS: 1.0.1
