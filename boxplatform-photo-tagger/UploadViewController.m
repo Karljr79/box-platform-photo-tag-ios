@@ -151,7 +151,7 @@
     
     //prepare the request.  Folder ID is hard coded for demo purposes.  Ideally you would have
     //a defined folder structure for each app user and use that to determine where images should be uploaded to
-    BOXFileUploadRequest *request = [_boxClient fileUploadRequestToFolderWithID:@"8815657578" fromData:image fileName:fileName];
+    BOXFileUploadRequest *request = [_boxClient fileUploadRequestToFolderWithID:@"0" fromData:image fileName:fileName];
     
     //send the request
     [request performRequestWithProgress:^(long long totalBytesTransferred, long long totalBytesExpectedToTransfer) {
