@@ -20,6 +20,17 @@ $ pod install
 -URL for the sample server (see [https://github.com/Karljr79/box-platform-photo-tag-server](https://github.com/Karljr79/box-platform-photo-tag-server))
 -A Box App User ID (Use the /signup route of the sample server to generate one)
 
-5. Run the project.  Be sure your example server is up so the app can get an access token.  You can run the app on the simulator, but will not be able to use the device camera (obviously).
+5. You will need to create a Metadata template within your Box admin console with the following spec:
+-Log in as the enterprise admin to your Box account
+-Head to the "Work Processes" tab (The icon looks like a wrench)
+-Click the metadata sub-tab
+-Click the "Create New" button
+-Name the template "photoUploads"
+-Name your attribute "tags"
+-In the "Format" dropdown select "Text"
+-Enter a description if you wish.
+-Press "Save"
 
-6. Enjoy!
+6. Run the project.  Be sure your example server is up so the app can get an access token.  You can run the app on the simulator, but will not be able to use the device camera (obviously).
+
+7. Enjoy!
