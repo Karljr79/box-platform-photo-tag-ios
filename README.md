@@ -22,4 +22,4 @@ $ pod install
 
 5. Run the project.  Be sure your example server is up so the app can get an access token.  You can run the app on the simulator, but will not be able to use the device camera (obviously).
 
-6. Enjoy! 
+6. Enjoy!
