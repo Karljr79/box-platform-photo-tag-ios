@@ -71,6 +71,9 @@
             NSLog(@"Error Searching for Files: %@", error);
             UIViewController *alert = [HelperClass showAlertWithTitle:@"Error" andMessage:error.localizedDescription];
             [self.navigationController presentViewController:alert animated:YES completion:nil];
+        } else if ([items count] == 0) {
+            UIViewController *alert = [HelperClass showAlertWithTitle:@"Search" andMessage:@"No Results"];
+            [self.navigationController presentViewController:alert animated:YES completion:nil];
         } else {
             //set the items array and trigger segue
             _items = items;
