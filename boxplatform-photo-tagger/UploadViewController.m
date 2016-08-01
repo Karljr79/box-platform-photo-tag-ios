@@ -157,6 +157,12 @@
     [request performRequestWithProgress:^(long long totalBytesTransferred, long long totalBytesExpectedToTransfer) {
     } completion:^(BOXFile *file, NSError *error) {
         
+        if (error) {
+            NSLog(@"Error Uploading to Box: %@", error);
+            UIViewController *alert = [HelperClass showAlertWithTitle:@"Error" andMessage:@"Could Not Upload File to Box"];
+            [self.navigationController presentViewController:alert animated:YES completion:nil];
+        }
+        
         [_spinner stopAnimating];
         NSLog(@"Successfully uploaded file ID: %@", file.modelID);
         
