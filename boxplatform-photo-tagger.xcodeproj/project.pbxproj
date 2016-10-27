@@ -29,6 +29,7 @@
 		86062B481D46B3BA0035860D /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		862C0FE21D42A3AB005FD11C /* HelperClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperClass.h; sourceTree = "<group>"; };
 		862C0FE31D42A3AB005FD11C /* HelperClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperClass.m; sourceTree = "<group>"; };
+		863B78E71DC29C71002C56CC /* boxplatform-photo-tagger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "boxplatform-photo-tagger.entitlements"; sourceTree = "<group>"; };
 		866D023E1D2DB30100987B8F /* boxplatform-photo-tagger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "boxplatform-photo-tagger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		866D02421D2DB30100987B8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		866D02441D2DB30100987B8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		866D02401D2DB30100987B8F /* boxplatform-photo-tagger */ = {
 			isa = PBXGroup;
 			children = (
+				863B78E71DC29C71002C56CC /* boxplatform-photo-tagger.entitlements */,
 				862C0FE11D42A2FF005FD11C /* Helpers */,
 				866D02441D2DB30100987B8F /* AppDelegate.h */,
 				866D02451D2DB30100987B8F /* AppDelegate.m */,
@@ -191,6 +193,11 @@
 					866D023D1D2DB30100987B8F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = PUG6WS969Z;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -402,6 +409,7 @@
 			baseConfigurationReference = EDBE700F27FC6E49AC90115A /* Pods-boxplatform-photo-tagger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "boxplatform-photo-tagger/boxplatform-photo-tagger.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "boxplatform-photo-tagger/Info.plist";
@@ -417,6 +425,7 @@
 			baseConfigurationReference = F138AD4C8A63C5ACDCD03BEA /* Pods-boxplatform-photo-tagger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "boxplatform-photo-tagger/boxplatform-photo-tagger.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "boxplatform-photo-tagger/Info.plist";
